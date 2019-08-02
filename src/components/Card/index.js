@@ -33,7 +33,7 @@ export default function Card({ data, index, listIndex }) {
       // card drop reference
       const targetSize = ref.current.getBoundingClientRect();
       const targetCenter = (targetSize.bottom - targetSize.top) / 2;
-      // moving card
+      // moving card reference
       const draggedOffset = monitor.getClientOffset();
       const draggedTop = draggedOffset.y - targetSize.top;
 
