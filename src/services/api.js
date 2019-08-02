@@ -1,3 +1,4 @@
+// static service api
 export function loadLists() {
   return [
     {

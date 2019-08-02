@@ -8,11 +8,13 @@ import List from "../List";
 
 import { Container } from "./styles";
 
+// fake api
 const data = loadLists();
 
 export default function Board() {
   const [lists, setLists] = useState(data);
 
+  // function to move position card and your list
   function move(fromList, toList, from, to) {
     setLists(
       immer(lists, draft => {
